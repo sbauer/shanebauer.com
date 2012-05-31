@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shane Bauer - ShaneBauer.com - Software Development Portfolio</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container wrap">
+		<div class="content">
+			<header class="row upper">
+				<div class="span6">
+					<h1>Shane Bauer</h1>
+					<p>Experienced Software Developer, ASP.NET, C#, Ruby, Rails</p>
+				</div>
+				<div class="span4">
+					<nav>
+						<ul class="nav nav-pills">
+
+					    	<%=nav_link 'Home',root_path%>
+							<%=nav_link 'About Me',about_path%>
+							<%=nav_link 'Projects',projects_path%>
+					  		<%=nav_link 'Contact',contact_path%>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="row" style="margin-top: 10px">
+				<div class="span8">
+					<%=yield %>
+				</div>
+				<div class="span2">
+					<h3>Let's Connect</h3>
+					 <%=render :partial=>'shared/connections' %>
+				</div>
+			</div>
+			
+			<footer class="row" >
+				<div class="span12" style="text-align:center">
+					&copy;2002-2012. Shane Bauer
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
