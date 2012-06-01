@@ -13,8 +13,36 @@
 */
 
 
+nav a {
+	color: #4099D8
+}
 
-.wrap
-{
+.wrap {
+	-moz-box-shadow: 0 0 5px #2B634A;
+	-webkit-box-shadow: 0 0 5px #2B634A;
+	box-shadow: 0 0 5px #2B634A;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	
+	
+}
+
+.content {
+	padding: 10px
+}
+
+header.upper h1 {
+	text-transform: uppercase;
+}
+
+.nav-pills > .active > a
+{
+	background-color: #4099D8
+}
+
+footer 
+{
+	text-align: center;
 }
