@@ -11,7 +11,16 @@
  *= require_self
  *= require_tree .
 */
+body
+{
 
+	background-color: #109F5E !important;
+	padding-top: 40px;
+}
+
+.container {
+width: 900px !important;
+}
 
 nav a {
 	color: #4099D8
@@ -45,4 +54,13 @@ header.upper h1 {
 footer 
 {
 	text-align: center;
+}
+
+h1 {
+	font-size: 2.1em !important;
+}
+
+h3 {
+	margin-top: 10px !important;
+	font-size: 1.4em !important;
 }

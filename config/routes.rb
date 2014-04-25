@@ -1,8 +1,8 @@
 Bauer::Application.routes.draw do
 
-  match 'about', :to => 'pages#about', :as => 'about'
-  match 'projects', :to => 'pages#projects', :as => 'projects'
-  match 'contact', :to =>'pages#contact', :as => 'contact'
+  get 'about', :to => 'pages#about', :as => 'about'
+  get 'projects', :to => 'pages#projects', :as => 'projects'
+  get 'contact', :to =>'pages#contact', :as => 'contact'
   root :to => 'pages#index'
 
 end
