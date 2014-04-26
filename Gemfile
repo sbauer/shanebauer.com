@@ -5,9 +5,7 @@ gem 'rails', '4.1.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem "therubyracer"
-gem "less-rails"
-gem 'sass-rails', '~> 4.0.3'
-gem 'bootstrap-sass', '~> 3.1.1'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
